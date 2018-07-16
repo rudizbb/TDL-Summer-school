@@ -48,9 +48,3 @@ cucumber PLATFORM=valid BROWSER=chrome|firefox --format --pretty --expand --form
 #### Currently supported browsers:
 * Chrome
 * Mozilla Firefox
-#### Currently supported platforms:
-* Validation
-
-## Authors
-* **Roberts Bralis** 
-* **Gatis Vaitovskis**
