@@ -1,0 +1,7 @@
+user1:
+  email: rblaumanis@gmail.com
+  password: TestUser1234
+
+user2:
+  email: mail@othermail.com
+  password: password
