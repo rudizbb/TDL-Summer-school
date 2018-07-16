@@ -1,4 +1,4 @@
-# Back-Office Web Automation
+# Discord Web App Automation
 Back-Office Web Automation project using Ruby+Cucumber+Capybara tools
 ## Getting Started
 Install any Ruby editor/IDE:
