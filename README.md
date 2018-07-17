@@ -1,5 +1,5 @@
 # Discord Web App Automation
-Back-Office Web Automation project using Ruby+Cucumber+Capybara tools
+Discord Web Automation project using Ruby+Cucumber+Capybara tools
 ## Getting Started
 Install any Ruby editor/IDE:
 RubyMine: https://www.jetbrains.com/ruby/download/#section=windows (free 30 day trial available)  
@@ -12,13 +12,13 @@ Ruby Version Manager (rvm) link: https://rvm.io/rvm/install
 
 ## Prerequisites
 
-* Clone the git repo: http://USERNAME@scm.parts-advisor.com/scm/qa/parts-advisor-bo-web-automation.git
+* Clone the git repo
 * Install bundler: `gem install bundler`
 * Run install bundler: `bundle install`
 
 ## Project structure
 ```
-parts-advisor-bo-web-automation
+Discord-automation
 |   config
 |    |    test_data.yml
 |    |    .........  
