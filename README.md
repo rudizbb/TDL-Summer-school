@@ -47,6 +47,10 @@ To run tests:
 ```bash
 cucumber PLATFORM=valid BROWSER=chrome --format --pretty --expand --format json -o report.json
 ```
+```bash
+To run by tags add:
+--tags @tag
+```
 #### Currently supported browsers:
 * Chrome
 * Mozilla Firefox
