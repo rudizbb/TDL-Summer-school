@@ -6,15 +6,17 @@ RubyMine: https://www.jetbrains.com/ruby/download/#section=windows (free 30 day 
 Aptana Studio: http://www.aptana.com/products/studio3/download.html (free)  
 Komodo IDE: https://www.activestate.com/komodo-ide/downloads/ide (free 21 day trial)  
 Netbeans: https://netbeans.org/downloads/ (as plugin)
+VSCode: https://code.visualstudio.com/
 
 Ruby download link: https://www.ruby-lang.org/en/downloads/  
 Ruby Version Manager (rvm) link: https://rvm.io/rvm/install
 
 ## Prerequisites
-
-* Clone the git repo
+* Clone the git repo `https://github.com/rudizbb/Discord-automation`
 * Install bundler: `gem install bundler`
+* Update bundler: `bundle update --bundler`
 * Run install bundler: `bundle install`
+* Setup latest Chrome: `https://www.google.com/chrome/`
 
 ## Project structure
 ```
@@ -43,7 +45,7 @@ Discord-automation
 
 To run tests:
 ```bash
-cucumber PLATFORM=valid BROWSER=chrome|firefox --format --pretty --expand --format json -o report.json
+cucumber PLATFORM=valid BROWSER=chrome --format --pretty --expand --format json -o report.json
 ```
 #### Currently supported browsers:
 * Chrome

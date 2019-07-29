@@ -13,8 +13,7 @@ require 'capybara/rspec'
 require 'test/unit/assertions'
 require 'money'
 require 'monetize'
-
-SitePrism.configure {|config| config.use_implicit_waits = true}
+require 'cucumber'
 
 case ENV['PLATFORM']
   when 'prod' then 
@@ -51,8 +50,6 @@ when 'firefox' then
   elsif Gem::Platform.local.os == 'mingw32'
     Capybara.register_driver(:selenium) {|app| Capybara::Selenium::Driver.new(app, browser: :firefox)}
   end
-else
-  raise 'Incorrect browser! Available browsers: chrome, firefox'
 end
 World(Test::Unit::Assertions)
 Capybara.default_driver = :selenium
@@ -100,7 +97,6 @@ end
 
 AfterStep('not @poltergeist') do |_scenario|
   Capybara.ignore_hidden_elements = false
-  @user_cookies = user_session_cookies
 end
 
 After('@delete_downloads') do |scenario|
@@ -133,9 +129,4 @@ def print_browser_logs
     # puts current_url
     # puts '=================================='
   end
-end
-
-def user_session_cookies
-  cookies = Capybara.current_session.driver.browser.manage.cookie_named('ALLPARTS-AUTH-TOKEN')
-  cookies[:value].to_s unless cookies.nil?
 end
